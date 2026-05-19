@@ -10,6 +10,7 @@ This repository contains my official coursework and practical assignments comple
 
 The repository includes **5 core computational notebooks (`.ipynb`)** covering advanced programming concepts, algorithm design, and structured problem-solving in Python:
 
+* **`Assignments.pdf`:** Programming problems for all following solved Python 
 * **`program_1.ipynb`:** Foundational logic building, advanced data types, and structured control flow.
 * **`program_2.ipynb`:** Algorithm implementation, functional programming, and data manipulation.
 * **`program_3.ipynb`:** Advanced algorithmic problem solving, handling iterations, and complex data structures.
