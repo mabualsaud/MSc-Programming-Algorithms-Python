@@ -3,66 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MSc Software Engineering - Programming &amp; Algorithms</title>
-    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&amp;display=swap" rel="stylesheet">
+    <title>MSc Software Engineering Modules</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-        body { font-family: 'Segoe UI', sans-serif; background: #f8fafc; color: #0f172a; padding: 40px 20px; text-align: center; }
-        .container { max-width: 700px; margin: 0 auto; background: white; padding: 30px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
-        h1 { color: #1e3a8a; font-size: 2rem; margin-bottom: 10px; }
-        .grade { background: #dcfce7; color: #166534; padding: 8px 16px; border-radius: 20px; font-weight: bold; display: inline-block; margin-bottom: 20px; }
+        :root {
+            --primary: #f59e0b;
+            --bg: #020617;
+            --card-bg: rgba(255, 255, 255, 0.03);
+            --text-main: #ffffff;
+        }
+        body { background-color: var(--bg); color: var(--text-main); font-family: 'Segoe UI', sans-serif; padding: 40px 20px; margin: 0; }
+        .container { max-width: 900px; margin: 0 auto; }
         
-        /* صندوق مستند الأسئلة PDF */
-        .pdf-box { background: #fff1f2; border: 1px dashed #fca5a5; padding: 18px; border-radius: 12px; margin-bottom: 25px; display: flex; justify-content: space-between; align-items: center; text-align: left; }
-        .pdf-info { display: flex; align-items: center; gap: 10px; color: #991b1b; font-weight: 600; }
-        .pdf-btn { background: #dc2626; color: white; text-decoration: none; padding: 8px 16px; border-radius: 6px; font-size: 0.9rem; font-weight: 600; transition: 0.2s; display: flex; align-items: center; gap: 8px; }
-        .pdf-btn:hover { background: #b91c1c; }
+        /* Header Fix */
+        .main-header { text-align: center; margin-bottom: 60px; width: 100%; }
+        .main-header h1 { font-size: 2.8rem; margin-bottom: 10px; color: var(--text-main); }
+        .subtitle { color: #94a3b8; font-size: 1.2rem; text-transform: uppercase; letter-spacing: 2px; }
 
-        .list-group { text-align: left; list-style: none; padding: 0; }
-        .list-group li { padding: 15px; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center; }
-        .list-group li:last-child { border: none; }
-        .btn { background: #2563eb; color: white; text-decoration: none; padding: 6px 12px; border-radius: 6px; font-size: 0.9rem; font-weight: 600; transition: 0.2s; }
-        .btn:hover { background: #1d4ed8; }
-        span { font-weight: 600; display: flex; align-items: center; gap: 10px; }
+        .module-card { background: var(--card-bg); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 24px; padding: 40px; margin-bottom: 40px; }
+        
+        .notebook-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 25px;
+        }
+        
+        .notebook-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 16px;
+            border-left: 5px solid var(--primary);
+            transition: 0.3s;
+        }
+        
+        .notebook-card:hover { background: rgba(255, 255, 255, 0.1); transform: translateY(-5px); }
+        .notebook-card h4 { margin: 0 0 10px 0; font-size: 1rem; color: #cbd5e1; }
+        
+        .btn-code { 
+            display: inline-block; background: #059669; color: white; padding: 8px 12px; 
+            border-radius: 8px; text-decoration: none; font-size: 0.8rem; font-weight: bold;
+        }
+        
+        .question-card { background: linear-gradient(135deg, #ef4444 0%, #7f1d1d 100%); padding: 25px; border-radius: 16px; margin: 30px 0; display: flex; justify-content: space-between; align-items: center; }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>MSc Software Engineering</h1>
-    <p style="color: #475569; font-weight: 600;">City, University of London - Module 1</p>
-    <div class="grade">🏆 Achieved Grade: 90% (Distinction)</div>
-    
-    <div class="pdf-box">
-        <div class="pdf-info">
-            <i class="fa-solid fa-file-pdf" style="font-size: 1.5rem;"></i>
-            <span>Assignment Requirements &amp; Problems (PDF)</span>
-        </div>
-        <a href="assignments.pdf" target="_blank" class="pdf-btn"><i class="fa-solid fa-eye"></i> View PDF</a>
-    </div>
+    <header class="main-header">
+        <h1>MSc Software Engineering</h1>
+        <div class="subtitle">Codes Architecture for Assignments</div>
+    </header>
 
-    <ul class="list-group">
-        <li>
-            <span><i class="fa-solid fa-code" style="color: #0284c7;"></i> Program 1: Foundational Logic</span>
-            <a href="https://colab.research.google.com/github/mabualsaud/MSc-Programming-Algorithms-Python/blob/main/Program_1.ipynb" target="_blank" class="btn">View Notebook</a>
-        </li>
-        <li>
-            <span><i class="fa-solid fa-code" style="color: #0284c7;"></i> Program 2: Algorithm Implementation</span>
-            <a href="https://colab.research.google.com/github/mabualsaud/MSc-Programming-Algorithms-Python/blob/main/Program_2.ipynb" target="_blank" class="btn">View Notebook</a>
-        </li>
-        <li>
-            <span><i class="fa-solid fa-code" style="color: #0284c7;"></i> Program 3: Advanced Iterations</span>
-            <a href="https://colab.research.google.com/github/mabualsaud/MSc-Programming-Algorithms-Python/blob/main/Program_3.ipynb" target="_blank" class="btn">View Notebook</a>
-        </li>
-        <li>
-            <span><i class="fa-solid fa-code" style="color: #0284c7;"></i> Program 4: Optimization &amp; Structure</span>
-            <a href="https://colab.research.google.com/github/mabualsaud/MSc-Programming-Algorithms-Python/blob/main/Program_4%20.ipynb" target="_blank" class="btn">View Notebook</a>
-        </li>
-        <li>
-            <span><i class="fa-solid fa-code" style="color: #0284c7;"></i> Program 5: Capstone Computational Script</span>
-            <a href="https://colab.research.google.com/github/mabualsaud/MSc-Programming-Algorithms-Python/blob/main/Program%20_5.ipynb" target="_blank" class="btn">View Notebook</a>
-        </li>
-    </ul>
+    <div class="module-card">
+        <h2><i class="fas fa-laptop-code"></i> 1st Module: Programming & Algorithms</h2>
+
+        <div class="question-card">
+            <div>
+                <h3 style="margin:0;">Assignment 1: Problem Set</h3>
+                <p style="margin: 5px 0 0; opacity: 0.8;">Official documentation and questions</p>
+            </div>
+            <a href="https://drive.google.com/file/d/1lFNq2syxlblVs1MocD_3vs1EaiG1dv2s/view" style="background:#fff; color:#b91c1c; padding:10px 20px; border-radius:8px; text-decoration:none; font-weight:bold;" target="_blank">Download PDF</a>
+        </div>
+
+        <h3 style="margin-top: 40px;"><i class="fas fa-terminal"></i> Programming Solution Notebooks</h3>
+        
+        <div class="notebook-grid">
+            <div class="notebook-card" style="border-left-color: #3b82f6;">
+                <h4>Program 1: Foundational Logic</h4>
+                <a href="https://colab.research.google.com/github/mabualsaud/MSc-Programming-Algorithms-Python/blob/main/Program_1.ipynb" class="btn-code">View Notebook</a>
+            </div>
+            <div class="notebook-card" style="border-left-color: #8b5cf6;">
+                <h4>Program 2: Set Operations</h4>
+                <a href="https://colab.research.google.com/github/mabualsaud/MSc-Programming-Algorithms-Python/blob/main/Program_2.ipynb" class="btn-code">View Notebook</a>
+            </div>
+            <div class="notebook-card" style="border-left-color: #ec4899;">
+                <h4>Program 3: Sorting Algorithms</h4>
+                <a href="https://colab.research.google.com/github/mabualsaud/MSc-Programming-Algorithms-Python/blob/main/Program_3.ipynb" class="btn-code">View Notebook</a>
+            </div>
+            <div class="notebook-card" style="border-left-color: #10b981;">
+                <h4>Program 4: Data Structures</h4>
+                <a href="https://colab.research.google.com/github/mabualsaud/MSc-Programming-Algorithms-Python/blob/main/Program_4%20.ipynb" class="btn-code">View Notebook</a>
+            </div>
+            <div class="notebook-card" style="border-left-color: #f59e0b;">
+                <h4>Program 5: Integrated App</h4>
+                <a href="https://colab.research.google.com/github/mabualsaud/MSc-Programming-Algorithms-Python/blob/main/Program%20_5.ipynb" class="btn-code">View Notebook</a>
+            </div>
+        </div>
+    </div>
 </div>
 
 </body>
