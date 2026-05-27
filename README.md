@@ -1,12 +1,12 @@
-# MSc-Programming-Algorithms-Python
+# MSc-Software Engineering Modules projects & Assignments
 ## See my codes in this link 
-## https://mabualsaud.github.io/MSc-Programming-Algorithms-Python/
+##
 
-# 🎓 MSc Software Engineering | Programming & Algorithms (Python)
+# 🎓 1st Module: Programming & Algorithms (Python)
 
 This repository contains my official coursework and practical assignments completed during **Module 1: Programming & Algorithm** for my Master of Science in Software Engineering (MSc SE) at **City, University of London**.
 
-### 🏆 Academic Achievement: Secured **90% (Distinction/High First Class)** ---
+### 🏆 Academic Achievement: Secured **93% (Distinction/High First Class)** ---
 
 ## 💻 Repository Structure & Contents
 
@@ -28,7 +28,27 @@ The repository includes **5 core computational notebooks (`.ipynb`)** covering a
 * **Academic Institution:** City St George's University of London.
 
 ---
+# 🎓 2nd Module: Web Technologies (HTML, CSS, JavaScript, and UI/UX)
+💻 Repository Structure & Contents
+The repository includes a collection of interactive projects focusing on web architecture, user experience (UX), and dynamic interface development:
 
+
+web_logic_core.js: Business logic implemented using JavaScript to ensure interface interaction efficiency.
+
+layout_styles.css: Visual architecture (CSS) with a focus on responsive design and accessibility.
+
+interface_design.html: User interface markup structure adhering to W3C standards.
+
+ui_ux_case_study.ipynb: User experience analysis and documentation of design decisions based on engineering foundations and UX theories.
+
+🛠️ Tech Stack & Concepts Covered
+Core Technologies: HTML5, CSS3, JavaScript (ES6+).
+
+Concepts: Responsive Web Design (RWD), DOM Manipulation, UI/UX Principles, Web Standards, and Accessibility (A11y).
+
+Methodology: Balancing visual aesthetics with engineering functionality, with a focus on User-Centric Design.
+
+Academic Institution: City St George's University of London.
 ## 👤 Developer & Researcher
 * **Name:** Mai Abu Al Saud
 * **Degree:** MSc Software Engineering (candidate)
